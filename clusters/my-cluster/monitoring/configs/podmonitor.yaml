@@ -5,9 +5,9 @@ metadata:
   labels:
     app.kubernetes.io/part-of: flux
     app.kubernetes.io/component: monitoring
-    # Uncomment during the first run, comment after stack is up
-    # annotations:
-    #   kustomize.toolkit.fluxcd.io/ssa: Ignore
+    # Comment after the first run. Solves dependency issues
+    annotations:
+      kustomize.toolkit.fluxcd.io/ssa: Ignore
 spec:
   namespaceSelector:
     matchNames:
