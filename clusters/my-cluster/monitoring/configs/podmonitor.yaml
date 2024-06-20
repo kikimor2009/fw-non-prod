@@ -6,8 +6,8 @@ metadata:
     app.kubernetes.io/part-of: flux
     app.kubernetes.io/component: monitoring
     # Comment after the first run. Solves dependency issues
-    annotations:
-      kustomize.toolkit.fluxcd.io/ssa: Ignore
+  annotations:
+    kustomize.toolkit.fluxcd.io/ssa: Ignore
 spec:
   namespaceSelector:
     matchNames:
